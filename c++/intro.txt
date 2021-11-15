@@ -1,0 +1,27 @@
+
+@ HELLO WORLD FROM C++
+
+    #include <iostream> ==>include libraries
+    int main() {        ==>Main function
+    std::cout << "Hello World!\n";  ==>function body
+    }
+
+
+@ OUTPUT
+
+*execution
+    top to down, line by line
+
+*std::cout <<"Hello World!\n";
+    std::cout ==>Standard(namespace), character output stream, pronounced "see-out"
+    :: ==>scope
+    << ==>operator
+    "Hello World?\n" ==>is what being output, double quotes around text. \n indicates a new line.
+    ; ==>end the statement
+
+*namespace
+    a set of signs(names)that are used to identify and refer to objects of various kinds.
+
+
+@ PATTERN
+    can print out several lines with one fucntion
