@@ -24,4 +24,51 @@
 
 
 @ PATTERN
+    
+*/n
     can print out several lines with one fucntion
+
+@ COMPILE AND EXECUTE
+
+*C++ is a compiled language, source code => compile => machine code => execute.
+
+*compile
+    turn/translate source code into machaine code
+
+*g++
+    type |g++ app-name.cpp| into terminal to call on the compiler
+
+*execute
+    type |./machine-code-file-name.out| in terminal
+
+*process
+    executable file => loaded to CPU => line by line
+
+
+@ NAMING EXECUTABLES
+    
+*name executable & output & execute
+    |g++ hello.cpp -o name-of-the-executable| 
+    then
+    |./name-of-the-executable| to execute
+
+*COMMENTS
+    |// comments here!|
+    |/*comment,
+    comment,
+    comment.*/|
+
+*source code suffix
+    .cpp
+    .h
+
+    VARIABLE
+
+*declare
+    name+type
+    | int score; |
+
+*strongly typed
+    
+
+
