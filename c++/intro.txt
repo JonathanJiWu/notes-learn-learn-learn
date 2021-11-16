@@ -63,6 +63,7 @@
     .h
 
     VARIABLE
+    =========
 
 *declare
     name+type
@@ -70,5 +71,53 @@
 
 *strongly typed
     
+*initialize
+    | score = 0; |
 
+*arthmetic Operators
+    +, -, *, /, %
+
+*print out the value of variable
+    std::cout << score << "\n";
+
+*chaining
+    int age = 28;
+    std::cout << "Hello, I am ";
+    std::cout << age;
+    std::cout << " years old\n";
+    output ==> Hello, I am 28 years old
+    can be written as ==> std::cout << "Hello, I am " << age << " years old\n";
+
+    #include <iostream>
+    int main() { 
+    int score = 0;
+    std::cout << "Player score: " << score <<"\n";   
+    }
+
+*user input
+    std::cout << "Enter your password: ";
+    std::cin >> password;
+
+    cin ==>see-in
+    >> ==>get from
+
+*recompile after any changes
+
+
+    CONDITIONALS
+    ================================================================
+
+*if
+    #include <iostream>
+    int main() {
+    int grade = 90;
+    if(grade > 60){
+        std::cout << "Pass\n";
+    }}
+
+*relational Operators
+    ==, !=, >, <, >=, <=
+
+*else Clause
+    
 
