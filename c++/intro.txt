@@ -139,9 +139,12 @@
         break;
     }    
 
-
-    Logical Operators
-
 *Operators
     &&, ||, !
+
+    LOOPS
+    ======
+
+*While loop
+    
 
