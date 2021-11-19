@@ -146,5 +146,11 @@
     ======
 
 *While loop
-    
+*for loop
+
+    ERRORS
+    =======
+*compile-time errors
+    1. syntax errors
+    2. type errors
 
