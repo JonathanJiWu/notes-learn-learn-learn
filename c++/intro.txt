@@ -154,3 +154,24 @@
     1. syntax errors
     2. type errors
 
+*link-time errors
+    the program needs some function or library that it can't find
+    found by linker
+    1. using a function that was never defined
+    2. Main(), instead of maine()
+
+*linker
+    combine object files into an executable files
+
+*run-time errors
+    1. division by zero/division error
+    2. trying to open a file that doesn't exist
+
+*logic errors
+    1. program logic is flawed
+    2. if/loop mistakes
+
+
+    VECTORS
+    =======
+
