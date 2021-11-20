@@ -175,3 +175,73 @@
     VECTORS
     =======
 
+*vector
+    a sequence of elements that can be accessed by index(so, sorted array?)
+
+::
+    scope resolution operator
+    allows statically traverse scopes such as namespace and classes in order to reference the identifer
+    resolve ambiguities pertaining to scope
+    ~ it allows access to global version of variable
+
+*creating a vector
+    | std::vector | lives in the <vector> header
+    1. add | #include <vector> | at the top of the program
+    2. std::vector <type> name;
+    so define a vector of int called calories:
+        | std::vector<int> calories; |
+
+    the type of the vector can not be changed after the declaration
+
+*initializing a vector and giving it value
+    | std::vector<double> location = {45.49646, -45.84155} |
+
+*initializing a vector and presizing(setting the size)
+    | std::vector<double> location(2); |
+
+*index of vectors
+    output a certain element
+    | std::cout << vowels[3];
+
+*add/remove element to vector
+    .push_back()
+        add a element to the end of the vector
+    .pop_back()
+        remove element from the back
+
+*.size()
+    length of the vector, how many elements
+    std::cout<<grocery.size();
+
+*operations
+    loop through a vector
+
+*#include
+    preprocessor directive that tells the compiler to include certain libraries
+
+*include files
+    include functionalities from other scource files
+    (like imports/exports in React?)
+
+    1. when include your own library you write it like this
+    | #include "includes/calculation.cpp" |
+    (bad practice)
+
+    2. when using C++ library you write it like this:
+    | #include <iostream> |
+
+#header files
+    .h file with the exact same name with the .cpp file
+    has only the signiture of the .cpp whitout showing it
+    example of a header file:
+        | #include <iostream> |
+        | int add(int, int);  |
+        | void output_message(std::string); |
+
+        and just say | #include "includes/calculation.h" | in the file you are importing into
+        the .CPP and .h will be linked together because they have the same name during the the compliation
+        just say | g++ -o main.exe main.cpp includes/calculations.cpp | to generate .exe file
+
+
+
+
