@@ -284,3 +284,15 @@
 *multiple arguments
     1. function call must include the same number of arguments as the parameters
     2. arguments must be passed in the same order
+
+    CODE CHALLENGES
+    =====================
+
+*raise to the power
+    include <cmath>
+    pow(base, exponent);
+
+*function that returns vector
+    std::vector<int> function-name(){
+        
+    }
