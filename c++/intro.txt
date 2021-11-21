@@ -243,5 +243,44 @@
         just say | g++ -o main.exe main.cpp includes/calculations.cpp | to generate .exe file
 
 
+    FUNCTIONS 
+    ============
 
+*build-in fucntions
+    gain access by including headers like <cmath>, <string>
 
+*calling a function
+    | std::cout<< sqrt(9) << "\n"; | //output 3
+
+*declare & Define
+    | return_type function_name( any, parameters, you, have ) { |  declaration
+    | // Code block here |                                          Defination
+    | return output_if_there_is_any; |
+}
+
+*void
+    aka subroutine, has no return value
+
+*return types
+    double, int, bool, char, std::string, std::vector
+    return statement is the last line of code will execute
+    | std:: string alway_blue(){ |
+    |    return "blue!"; |
+    | } |
+
+*return value
+    if the function is not void and has a return type:
+    1. there must be a value returned from the function
+    2. the returned value type must be the same as the function's type
+
+    the value is returned to the place where the function is called
+
+*parameters & arguments
+    parameters are variables used in functions, are placeholders for input value used during function call (formal parameter)
+    the value passed into the function during the function call is called argument (actual parameter)
+    | void get_emergency_number(std::string emergency_number){ |
+    | std::cout << "Dial " << emergency_number;} |
+
+*multiple arguments
+    1. function call must include the same number of arguments as the parameters
+    2. arguments must be passed in the same order
