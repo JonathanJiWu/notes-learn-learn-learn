@@ -334,7 +334,44 @@
 *getting header
     there will be too many function declarations before main() if the code keep growing
     and declare functions repeatedly in multiple files is hard to make change and maintain
-    --move all the the function declarations to a header file, with the same name
+    
+    --move all the the function declarations to a header file, with the same name, file extension is .hpp or .h
+    just add | #include "my_functions.hpp" | to the top of main.cpp
+
+*inline functions
+    usually in a header file, qualified by | inline |:
+
+    inline 
+    void eat() {
+    std::cout << "nom nom\n";
+    }
+
+    | inline | advises compiler to insert the function body where the function call is
+
+*member functions
+    function inside of classes, sometimes also called "inline functions"
+
+*default argument
+    a argument is required if the function has a parameter
+    asign a value to the parameter in the function declaration, it will be the default argument if no argument is given when making the function call
+
+            // Declaration
+            void intro(std::string name, std::string lang = "C++");
+            
+            // Definition
+            void intro(std::string name, std::string lang) {
+            std::cout << "Hi, my name is "
+                        << name
+                        << " and I'm learning "
+                        << lang
+                        << ".\n";
+            }
+
+        "C++" is the default argument
+
+*default argument for functions with two parameters
+
+
 
 
 
