@@ -370,6 +370,21 @@
         "C++" is the default argument
 
 *default argument for functions with two parameters
+    which argument corresponds with parameter based on order
+    parameters with out ddefault arguments comes first
+    two arguments both needs to be call with function with two default arguments
+    if
+        first argument is the default value & the second argument is not default value
+
+*functin overload
+    change the way a function behaves depending on argument passed
+
+    accept different tpyes of arguments
+    optional parameters
+
+    multiple functions with the same name, has either different tpye of parameters
+    or different number of parameters
+
 
 
 
