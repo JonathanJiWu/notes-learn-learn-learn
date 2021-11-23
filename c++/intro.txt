@@ -296,3 +296,45 @@
     std::vector<int> function-name(){
         
     }
+
+    FUNCTIONS SCOPE & FLEXIBILITY
+    ===============================
+
+*scope
+    the region of code that can access or view a given element
+
+*globlal scope
+    accessible throughout the program
+
+*local scope
+    only accessible inside the function
+
+*multi-file programs
+    when code grown larger, we need to declare the function at the top and define it at the bottom
+    like:
+        #include <iostream>
+        
+        // Declaration at the top:
+        void eat();
+        
+        int main() {
+        eat();
+        }
+        
+        // Definition at the bottom:
+        void eat() {
+        
+        std::cout << "nom nom nom\n";
+        }
+
+    move function definition to another file and leave a list of declaration above main()
+    compiles files together into a single exe like this:
+       | g++ main.cpp my_functions.cpp |
+
+*getting header
+    there will be too many function declarations before main() if the code keep growing
+    and declare functions repeatedly in multiple files is hard to make change and maintain
+    --move all the the function declarations to a header file, with the same name
+
+
+
