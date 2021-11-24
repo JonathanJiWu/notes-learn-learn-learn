@@ -385,8 +385,18 @@
     multiple functions with the same name, has either different tpye of parameters
     or different number of parameters
 
+*function templates
+    overloading can be tedious
+    templates is a tool allows programmer to add types as parameters
 
+*template-based tpyes
+    std::string, std::vector
 
+*create function templates
+    entirely created in header files
+    type is chosen tight when the function is called
+    type chosen can be applied the return type, parameter type or both
+    
 
 
 
