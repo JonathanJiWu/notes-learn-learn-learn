@@ -396,6 +396,28 @@
     entirely created in header files
     type is chosen tight when the function is called
     type chosen can be applied the return type, parameter type or both
+
+    templates slow down compile time but speed up the execution time
+
+        .cpp
+        int get_smallest(int num1, int num2) {
+        return num2 < num1? num2 : num1;
+        }
+        double get_smallest(double num1, double num2) {
+        return num2 < num1? num2 : num1;
+        }
+
+        .hpp
+        int get_smallest(int num1, int num2);
+        double get_smallest(double num1, double num2);
+
+        can be turn into:
+
+        .hpp
+        template <typename T>
+        T get_smallest(T num1, T num2) {
+        return num2 < num1? num2 : num1;
+        }
     
 
 
