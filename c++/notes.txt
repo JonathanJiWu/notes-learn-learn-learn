@@ -433,15 +433,55 @@
     C++'s original name is C with Classes
 
 *class members
-    components of a class
+    components of classes
     access class members using the dot operator
     | object.class_member |
     two kinds of class members
         1. Attributes
         2. Methods
 
+*define methods outside a class
+    method must be declared inside the class
+    | ClassName:: | before the method name to indicate its class.
 
+            int City::get_population() {
+            return population;
+            }
+
+    and include the header file in the .cpp file where method is defined
+    song.hpp:
+        #include <string>
+
+        class Song{
+        std::string title; 
+        public:
+        void add_title(std::string new_title);
+        std::string get_title();
+        };
+
+    song.cpp
+        #include "song.hpp"
+
+        void Song::add_title(std::string new_title){
+        title = new_title;
+        }
+        std::string Song::get_title(){
+        return title;
+        }
+
+*create object
+    main.cpp:
+
+            #include <iostream>
+            #include "song.hpp"
+
+            int main() {
+            Song electric_relaxation;
+            electric_relaxation.add_title("Electric Relaxation");
+            std::cout <<electric_relaxation.get_title();
+            }
+
+*access control
+    public and private
     
-
-
 
