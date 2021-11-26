@@ -418,6 +418,29 @@
         T get_smallest(T num1, T num2) {
         return num2 < num1? num2 : num1;
         }
+
+        CLASS & OBJECTS
+        ================
+*data
+
+*object
+    an object is just a very compilcated data type
+    (attributes and functions)
+
+*class
+    is a blueprint of objects
+    describes objects
+    C++'s original name is C with Classes
+
+*class members
+    components of a class
+    access class members using the dot operator
+    | object.class_member |
+    two kinds of class members
+        1. Attributes
+        2. Methods
+
+
     
 
 
