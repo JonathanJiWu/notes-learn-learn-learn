@@ -586,6 +586,18 @@
     REFERENCES & POINTERS
     =================================
 
+*computer memory
+    a sequence of bytes, can be numbered from 0 to the last
+
+*address
+    each number of the bytes is an address
+    is a location in the memory
+    everything put into the memory has a address
+
+    int power = 900000;
+    set aside a int-size piece of memory for the variable power and put the value 900000
+    into that memory
+
 
 
 
