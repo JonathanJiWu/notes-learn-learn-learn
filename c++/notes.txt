@@ -764,6 +764,34 @@
         int* pointer = &original;
 
 
+    Visual Studio
+    =============
+
+*desktop dev
+    
+*plug-ins
+    resharper++, student license is free
+
+*solution
+    a group of project that are related to each other
+    or workbench
+
+*project
+    group of file that compiler into binary
+    .exe or library
+
+*source file
+    add new for files
+    main()
+
+*build, rebuild
+    generate .exe
+
+*debug
+    F5
+
+
+
 
 
 
