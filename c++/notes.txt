@@ -603,15 +603,87 @@
     allow programmers to directly manipulate memory to optimize performance
 
 *references
-#include <iostream>
 
-int main() {
-  
-  int soda = 99;
-  int &pop = soda;
-  pop++;
-  std::cout << soda << pop;
-}
+    an alias (a other name)for a variable
+    thing did to the reference also happens to the original
+    aliases can't be changed to alias something else
+
+    use &before the variable name
+
+        making pop a reference to soda:
+
+        #include <iostream>
+
+        int main() {
+        
+        int soda = 99;
+        int &pop = soda;
+        pop++;
+        std::cout << soda << pop;
+        }
+
+*pass-by-reference
+    using references as parameters allows us to modify the argument's values
+        void swap_num(int &i, int &j) {
+        
+        int temp = i;
+        i = j;
+        j = temp;
+        
+        }
+        
+        int main() {
+        
+        int a = 100;
+        int b = 200;
+        
+        swap_num(a, b);
+        
+        std::cout << "A is " << a << "\n";
+        std::cout << "B is " << b << "\n";
+        
+        }
+
+        #include <iostream>
+
+
+        int triple(int &i) {
+
+        i = i * 3;
+        
+        return i;
+
+        }
+
+        int main() {
+        
+        int num = 1;
+        
+        std::cout << triple(num) << "\n";
+        std::cout << triple(num) << "\n";
+
+        }
+
+*pass-by-value
+    pass parameters to a function, using normal variables
+
+*const
+    tells the compiler that the variable won't be changed
+    | double const pi = 3.14; |//error thrown if trying to change pi
+
+*const in function parameter
+    we know that the parameter won't change inside the function
+
+        int triple(int const i) {
+        return i * 3;
+        }//i is not modified
+
+*const reference
+    to save computational cost:
+
+        int triple(int const &i) {
+        return i * 3;
+        }//i is not modified, by making i a reference to the argument, not needing to making copy of the argument
 
 
 
