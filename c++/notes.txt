@@ -1,5 +1,15 @@
+    WELCOME
+    =========
 
-@ HELLO WORLD FROM C++
+*C++
+    compiler ==> machine code
+    hardware, game dev, fast, lower level
+
+*java, C#
+    compiler ==> visual machine ==> machine code
+
+
+*HELLO WORLD FROM C++
 
     #include <iostream> ==>include libraries
     int main() {        ==>Main function
