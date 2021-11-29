@@ -685,6 +685,75 @@
         return i * 3;
         }//i is not modified, by making i a reference to the argument, not needing to making copy of the argument
 
+*memory address
+    & is also used to get the memory address, the "address of" operator
+    find out where the variable is stored
+    
+    | std::cout << &porcupine_cout << "\n"; |
+    // returns something like: 0x7ffd7caa5b54 (hexadecimal, instead of binary for readability and conciseness.)
+
+    1. when & is used in a declaration:
+        reference operator
+    2. when & is not used in a declaration:
+        address operator
+
+*pointers
+    a pointer stores a memory address
+    inherited from C, avoid pointers as much as possible, usually a reference will do the trick
+    pointers must be declared before they can be used, marked by*
+    | int* number |
+    | double* decimal |
+    | char* character |
+
+    a variable called gum:
+        int gum = 8;
+    create a pointer to it:
+        int* ptr = &gum;
+
+    1. int* makes it a pointer rather than a normal variable
+    2. ptr* is the pointer name
+    3. &gum is the memory address of the variable--gum's memory address
+
+*dereference operator
+    | * |
+    to obtain the value the point pointed to
+
+        #include <iostream>
+
+        int main() {
+        
+        int power = 9000;
+        
+        // Create pointer
+        int* ptr = &power;
+        
+        // Print ptr
+        std::cout << ptr << "\n";//memory address
+        
+        // Print *ptr
+        std::cout << *ptr << "\n";//9000
+        
+        }
+
+        1. when * is used in a declaration, it's creating a pointer
+        2. wehn * is not used in a declaration, it's a dereference operator
+
+*null pointer
+    can't just declare a pointer variable and not intialize it like this:
+    | int* ptr; |
+    it need to be assigned a valid address, it can't be "nowhere" or "somewhere"
+
+    | nullptr | is an empty pointer:
+    | int* ptr = nullptr; |
+
+*review
+        // Reference
+        int &reference = original;
+        
+        // Pointer
+        int* pointer = &original;
+
+
 
 
 
