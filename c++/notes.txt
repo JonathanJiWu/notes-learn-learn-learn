@@ -808,6 +808,7 @@
     it will assume returning zero
 
 *<<
+    insertion operator
     overloaded operator, think them as a function
     operators are just functions
     same as .print() or push right into left
@@ -835,5 +836,34 @@
 *output window
     is better for error screening
 
+*endl
+    end line
+*\n
+    new line
 
+*types
+    char
+    int
+    double
+
+*declare multiple
+    int a, b, c, d;
+
+*cin.ignore();
+    reads and discards a char
     
+*initialize all variable rightaway
+    int x = 0;
+
+*string
+    not in the compiler, is in the C++ standard library
+    #include <string>
+    string myString
+
+*string appending
+    +
+
+*getline()
+    getline(cin, userInput, "\n");
+    getline(cin, userInput, ",");
+    parameters are source of input, the string to read into, and the char to terminate input
