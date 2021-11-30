@@ -861,9 +861,35 @@
     string myString
 
 *string appending
+    concatenate
     +
 
 *getline()
     getline(cin, userInput, "\n");
     getline(cin, userInput, ",");
     parameters are source of input, the string to read into, and the char to terminate input
+
+*bit
+    on/off switch
+    either 1 or 0
+
+*byte
+    is made up of eight bits
+    256 possible configurations of 1 and 0
+    2 raised to the power of 8
+    2 bytes = 16 bits, 2 raised to the power of 16(65536) value
+
+    -char
+        one byte, 256 values
+    -int
+        4 bytes, 4 billion different numbers
+    -float
+        4 bytes
+    -double
+        8 bytes, double is always better
+
+
+
+
+
+    
