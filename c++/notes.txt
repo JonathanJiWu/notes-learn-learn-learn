@@ -243,6 +243,8 @@
 #header files
     .h file with the exact same name with the .cpp file
     has only the signiture of the .cpp whitout showing it
+    aren't being compiled, they only got included into .cpp and then got compiled
+
     example of a header file:
         | #include <iostream> |
         | int add(int, int);  |
@@ -790,9 +792,48 @@
 *debug
     F5
 
+*#
+    pre-processor statement, happen just before the compilation
+
+*include <iostream>
+    find this file <file> and paste the content into the current file
+    usually the header files
+
+*<iostream>
+    has the declarations like cout
+
+*int main()
+    entry point of the program
+    main() is special case, it doesn't return a int, if not returning anything,
+    it will assume returning zero
+
+*<<
+    overloaded operator, think them as a function
+    operators are just functions
+    same as .print() or push right into left
+
+*solution configuration
+    set of rules that applies to the program for the platform
+    debug or release
+    debug's optimization is turned off, there for, slower
+
+*solution platform
+    x64==> win63
+    x86==> win32
+    android
+    what platform is the compilation targeting
+
+*.cpp
+    compiled into .obj files individually
+
+*compile individual files
+    VS ctrl+F7
+
+*error list
+    mostly useless
+
+*output window
+    is better for error screening
 
 
-
-
-
-
+    
