@@ -156,7 +156,36 @@
     ======
 
 *While loop
+
 *for loop
+    if you know the exact number of the times want it to loop
+    counting from 0 to 100
+    not if variable needs to be updated in a complicated way
+
+*do-while loop
+    fairly rare, a reversed while loop
+    make it easy to write the loop body that happends at least once
+        do
+        {
+        //body...
+        }while(condition);
+    codition is tested at the END of the loop body
+    the loop will be execute at least once
+    
+*break
+    immediately end the loop, jump to the closing brace
+    escape route from within a large loop
+*continue
+    ends the current iteration early, but doesn't exit the loop
+    skip some code in the middle of the body of a loop
+
+*nested loops
+    -outer loop
+    -inner loop
+    
+*'\t'
+    tab char
+
 
     ERRORS
     =======
