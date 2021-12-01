@@ -314,7 +314,7 @@
     | std::cout<< sqrt(9) << "\n"; | //output 3
 
 *declare & Define
-    | return_type function_name( any, parameters, you, have ) { |  declaration
+    | return_type function_name( any, parameters, you, have ) { |  declaration or the prototype
     | // Code block here |                                          Defination
     | return output_if_there_is_any; |
 }
@@ -437,8 +437,9 @@
     if
         first argument is the default value & the second argument is not default value
 
-*functin overload
+*function overload
     change the way a function behaves depending on argument passed
+    only overload it if two functions do the same thing but do it to the different arguments
 
     accept different tpyes of arguments
     optional parameters
@@ -937,7 +938,39 @@
     -double
         8 bytes, double is always better
 
+*enumeration
+    variable can take on just a few value, and the values are known ahead of time
+    -enums
+        enumerated type, just int behind the scenes
+        give names to values that otherwise need to be hard coded
+        a variable type to create with a fixed list of values(colors of rainbow)
 
+            enum RainbowColor{
+                RC_RED, 
+                RC_ORANGE, 
+                RC_YELLOW, 
+                RC_GREEN, 
+                RC_BLUE, 
+                RC_INDIGO, 
+                RC_VIOLET
+            };
+
+        declare a special variable of the type RainbowColor:
+            
+            RainbowColor chosen_color = RC_RED;
+    
+        work with switch case:
+
+            switch(chose_color){
+             case RC_RED: /* paint screen red */
+             case RC_ORANGE: /* paint screen orange */
+             case RC_YELLOW: /* paint screen yellow */
+             case RC_GREEN: /* paint screen green */
+             case RC_BLUE: /* paint screen blue */
+             case RC_INDIGO: /* paint screen indigo */
+             case RC_VIOLET: /* paint screen violet */
+             default: /* handle unexpected types */
+             }
 
 
 
