@@ -156,6 +156,26 @@
     ======
 
 *While loop
+    if the loop condition is complicated, or loops nearly indefinitely
+    not if the change is complicated
+
+    condition doesn't fit in the sign line of for loop:
+        int j = 5;
+         for ( int i = 0; i < 10 && j > 0; i++ )
+         {
+        cout << i * j; j = i - j;
+         }
+
+    better to do this
+        int i = 0;
+         int j = 5;
+         while ( i < 10 && j > 0 )
+         {
+        cout << i * j;
+        j = i - j; 
+        i++;
+        }
+
 
 *for loop
     if you know the exact number of the times want it to loop
@@ -169,7 +189,7 @@
         {
         //body...
         }while(condition);
-    codition is tested at the END of the loop body
+    condition is tested at the END of the loop body
     the loop will be execute at least once
     
 *break
