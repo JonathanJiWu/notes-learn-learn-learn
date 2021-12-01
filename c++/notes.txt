@@ -972,6 +972,23 @@
              default: /* handle unexpected types */
              }
 
+*randomization
+    1. user input
+    2. program generate(pseudo-random numbers)
+
+*pseudo-random numbers
+    seed =math=> new seed
+
+*void srand(int seed);
+    call it at the start of the program
+    | srand(time(NULL)); |
+    must include headers | cstdlib |, | ctime |
+
+*limit range of random num
+    srand(time(NULL)); will give you between 0 and 32767(RAND_MAX)
+    using modulus operator
 
 
+    
+    
     
