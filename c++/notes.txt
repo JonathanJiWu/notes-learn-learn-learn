@@ -1045,7 +1045,34 @@
                     return num % divisor == 0;
                     }
 
+    -sometimes it's impossible to solve sub-problems
+        take a step back and try to find other ways
 
+*top-down design
+    breaking down program into manageable parts
+
+*bottom-up design
+    individual parts of the system are specified in detail. 
+    The parts are linked to form larger components, 
+    which are in turn linked until a complete system is formed.
+
+*helper function
+    functions that will be reused again and again, and might apply to other classes
+
+*efficiency
+    the algorithm above could be more efficient, 
+    like isPrime can only check 2 to square root of num
+
+*RSA
+    generate large number of prime numbers to create encryption keys
+
+*bigger picture
+    design on whiteboard or paper
+    Doing your design directly with code can sometimes obscure the big picture
+    as you work on sorting out each tiny little piece of the syntax that you need.
+
+*find the patten
+    write out a couple of examples, think about the similarities/differences
 
     
     
