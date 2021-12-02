@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-coin-filp",
+      "appliesTo": "c++/coin-filp.cpp",
+      "type": "launch"
+    }
+  ]
+}
