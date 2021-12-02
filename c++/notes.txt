@@ -988,6 +988,64 @@
     srand(time(NULL)); will give you between 0 and 32767(RAND_MAX)
     using modulus operator
 
+    HOW TO PRACTICE
+    ================
+
+*think in algorithm
+    series of steps required to solve a problem
+
+*break problems into chunks
+    -problem like print out prime numbers from 1 to 100
+        clearly more than a single operation:
+        1. go over all numbers between 1 to 100
+            -that's a for loop
+
+                for ( int i = 0; i < 100; i++ )
+                 {
+                // check whether i is prime? If it is, print it
+                 }
+
+        2. each number is tested whether is prime
+        3. if the number is prime, print it out
+            -use a function, and cout
+
+                for ( int i = 0; i < 100; i++ )
+                 {
+                if ( isPrime( i ) ) { 
+                cout << i << endl; 
+                 }
+                }
+
+            isPrime()
+            -that's the structure, now zoom in step 2
+                prime num: if it has no divisors other than 1 and itself
+                check if any number divides it evenly other than 1 and itself
+                    -using a second loop
+                    1. for each num between 1 and the num being tested
+                    2. check if it's divisible by the loop variable
+                    3. if it is, false
+                    4. if no divisor, true
+
+                    -translate that into code:
+
+                        bool isPrime (int num)
+                         {
+                            for ( int i = 2; i < num; i++) { 
+                                if ( isDivisible( num, i ) ) { 
+                                return false; 
+                                } } 
+                            return true;
+                             }
+
+                isDivisble()
+                -use modulo %, and if there's remainder
+
+                    bool isDivisible (int number, int divisor)
+                     {
+                    return num % divisor == 0;
+                    }
+
+
 
     
     
