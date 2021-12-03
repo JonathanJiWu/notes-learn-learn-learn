@@ -1136,3 +1136,45 @@
     to overwrite the original strcut:
         | ship = upgradeWeapons( ship ); |
 
+    POINTER IN DEPTH
+    ===========================
+
+*memory
+    normal variable's memory is fixed, chosen at compile time
+    a large num of sequenital pieces of data, each cell stores 1 byte
+    linearly organized, long array of chars
+    each cell has an address, which point stores
+
+*pointers
+    refer driectly to the memory that stores variable
+    "point to" a location in memory, similar to a hyperlink
+    sending a "link" to the variable rather than making a copy
+    like arrays, when they got passed into functions they aren't copied
+    always initiate the point before using it
+
+*variable & address
+    a variable is a representation of a value
+    the value is stored at a particular location in memory, has a memory address
+    the idea of pointer is:
+
+        take the address that stores the data
+        associated with the variable
+        and pass that address to the function
+        instead of making a copy of the data stored in the structure
+
+*stack
+    parts of memory used to store the variables that declared and being used
+    
+*heap(free store)
+    unallocated memory that can request in chuncks
+    managed by the OS
+
+*owner (of tha memory)
+    part of the code responsible for relasing a piece of memory
+    retrun it to the free store
+    program will eventually run of out memory(memory leak)
+    ==> slowdown & crashes
+
+    when writing a function that takes a pointer, 
+    whether the function take ownership should be documents
+
