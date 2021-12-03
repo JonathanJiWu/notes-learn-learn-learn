@@ -1074,6 +1074,33 @@
 *find the patten
     write out a couple of examples, think about the similarities/differences
 
+    -some execises
+         1  Implement the source code that turns numbers into English text for numbers between -999,999 and 999,999. (Hint: You might also be able to take advantage of the fact that the integer data type will truncate decimal points. Also, remember that your algorithm doesn’t have to work for all numbers—only numbers with six digits or less. )
+         2  Think about how you would go in the opposite direction, reading English text and translating it into numbers. Is this easier or harder than the earlier algorithm? How would you handle bad input?
+         3  Design a program that finds all numbers from 1 to 1000 whose prime factors, when added together, sum up to a prime number (for example, 12 has prime factors of 2, 2, and 3, which sum to 7, which is prime). Implement the code for that algorithm. (Hint: If you don’t know the algorithm to find the prime factors of a number and have trouble figuring it out, it’s OK to look it up on Google! I meant it when I told you that you don’t need to know math to be a programmer.)
+
+    DATA
+    ===========================
+
+*array
+    a variable with a single name that can store multiple values
+    (a numbered list)
+    | int myArray[6]; | ==> declare array named myArray with 6 int elements
+    | myArray[3]; | access 4th element
     
-    
+*multidimensional array
+    grid shaped
+    | int ticTacToeBoard[2][3]; |
+
+*array and for loop
+    loop through array
+
+*passing array to function
+    int sumArray (int value[]);
+    arrays passed into a function will be modified, not like normal variables, are copied into the function and the original is not affected
+
+    -if function need to know the size of the array
+        | int sumArray(int value[], int size);
+
+*sorting array
     
