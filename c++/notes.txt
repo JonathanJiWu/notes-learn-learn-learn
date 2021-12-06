@@ -1178,3 +1178,35 @@
     when writing a function that takes a pointer, 
     whether the function take ownership should be documents
 
+    POINTER SYNTAX
+    ==========================
+
+*declare a pointer
+    type *ptr_name;
+    -int *pointerToInteger;
+    ! how to make pointer variable name clear
+
+*pointing to something
+    getting the address of a variable
+
+*& ampersand
+    "address of" operator
+    | int *p_x = & x; |
+    using '&' is like looking up the URL address of a website
+    rather than staring at the contents of the the webpage
+    most of the time, all you want from a variable is its actual value
+
+*using a pointer
+    two things you can do with pointer:
+    1. request the memory location the pointer stores
+    2. request the value stored at that memory location
+    -pointer is an memory address
+    -*pointer to access the value at that memory location(dereferencing the pointer)
+    
+    1. A pointer stores an address, so when you use the bare pointer, 
+    you get that address back. You have to add something extra, 
+    the asterisk, in order to retrieve or modify the value stored at the address.
+    
+    2. A variable stores a value, so when you use the variable, 
+    you get its value. You have to add some extra, 
+    the ampersand, in order to retrieve the address of that variable.
