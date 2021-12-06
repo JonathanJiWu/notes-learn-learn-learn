@@ -1155,12 +1155,9 @@
 *variable & address
     a variable is a representation of a value
     the value is stored at a particular location in memory, has a memory address
-    the idea of pointer is:
-
-        take the address that stores the data
-        associated with the variable
-        and pass that address to the function
-        instead of making a copy of the data stored in the structure
+    
+    access the memory address of a variable:
+        | &number; |
 
 *stack
     parts of memory used to store the variables that declared and being used
@@ -1211,4 +1208,66 @@
     you get its value. You have to add some extra, 
     the ampersand, in order to retrieve the address of that variable.
 
-*
+    modify a pointer also modify the original variable
+
+*uninitialized pointers & NULL
+    always initialize pointer before use it, to prevent overwriting memory and crashing
+    -“this pointer is explicitly NOT initialized yet.”:
+        | int *ptr = nullptr; |
+
+*pointer & functions
+    pointer allow us to pass the address of a local variable into a function
+    can then modify the variable
+    -see pointer-swap-function.cpp
+
+        take the address that stores the data
+        associated with the variable
+        and pass that address to the function
+        instead of making a copy of the data stored in the structure
+
+*references
+    a variable that refers to another variable
+    and used just like a regular variable, stripped down pointer without needing to use special syntax
+    must always refer to valid memory
+    avoids extra copies of large data, but don't need full power of pointers
+    declared with ampersand:
+        | int &ref = number; |
+
+    the actual memory of the ref variable holds a pointer to the memory of the number variable
+    compiler knows that ref want the actual value pointed to
+
+        void swapVariable (int left, int right)
+        {
+	        int temp;
+	        temp = left;
+	        left = right;
+	        right = temp;
+        }//this will not work
+
+        void swapUsingPoiner(int* p_left, int* p_right)
+        {
+	        int temp = *p_left;
+	        *p_left = *p_right;
+	        *p_right = temp;
+        }//this will swap variables     
+
+        void swapReference (int& left, int& right)
+        {
+            int temp = right; 
+            right = left; 
+            left = temp;
+        }//this will work and easier to write
+
+*references vs. pointers
+    -ref is a replacement of ptr when refer to a variable by multiple names:
+    1. pass argument to a function without coping them
+    2. want the function to modify its parameters that is visible to the caller
+
+    -ref has less flexibility
+    1. ref must always be valid
+    2. ref can't be changed the memory it refers to
+
+    -ref almost always work with struct
+    | void(myStructType& arg); |
+
+
