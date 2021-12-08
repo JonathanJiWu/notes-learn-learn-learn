@@ -1270,4 +1270,50 @@
     -ref almost always work with struct
     | void(myStructType& arg); |
 
+    Dynamic Memory Allocation
+    ======================================
 
+*Dynamic allocation
+    request as much memory as needed while the program running
+    program will calculate the amount of memory needed instead of working fixed set of variables with a particular size
+
+*"new" & more memory
+    | new | is used to initialize pointers with memory from the free store:
+
+        | int *p_int = new int; |
+
+*"delete" & freeing the memory
+    return the memory back to the free store
+
+        | delete p_int; |
+        | p_int = NULL; |
+
+*running out of memory
+    if you keep allocating memory and never use free it, memory will run out
+
+*references and dynamic allocation
+    should not store memory in reference
+
+*pointers & arrays
+    pointer can point to a sequence of values, can be treated like an array
+    an array is, after all, a series of values laid out sequentially in memory
+    you can create a new array dynamically from the free store, allowing to determine the amount needed at runtime
+
+         int numbers[ 8 ];
+         int* p_numbers = numbers;
+         //use p_numbers just like an array
+
+         int *p_numbers = new int[ 8 ];
+
+         Using the array syntax as the argument to new 
+         tells the compiler how much memory it needs—enough for an 8-element integer array
+
+          delete[] p_numbers;
+          free the memory
+
+          how many numbers are needed and 
+          then uses that variable to determine the size of the dynamically allocated array:
+
+            int count_of_numbers;
+            cin >> count_of_numbers;
+            int *p_numbers = new int[ count_of_numbers ];
