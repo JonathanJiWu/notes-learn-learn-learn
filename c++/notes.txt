@@ -1317,3 +1317,10 @@
             int count_of_numbers;
             cin >> count_of_numbers;
             int *p_numbers = new int[ count_of_numbers ];
+
+    memory address of the array is the same with the first element and 
+    the rest adds to it [2] adds 2 position, [8] adds 8 and so on
+
+*multidimensional arrays
+    !save for later
+

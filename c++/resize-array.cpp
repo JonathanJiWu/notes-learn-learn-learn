@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int* growArray(int* p_values, int* size);
-void printArray(int* p_values, int size, int elements_set);
+int* growArray(int* p_values, int* size);//int function 
+void printArray(int* p_values, int size, int elements_set);//no return function
 
 int main()
 {
