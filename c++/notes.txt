@@ -1322,5 +1322,45 @@
     the rest adds to it [2] adds 2 position, [8] adds 8 and so on
 
 *multidimensional arrays
-    !save for later
+    !how to allocate multidimensional data structures dynamically
+
+*pointer arithmetic
+    pointer represent memory address, memory addresses are ultimately just numbers
+    so you can perform mathematical operations on pointer
+        -add a number and a pointer
+        -subtract two pointers
+            !when want to write a block of memory, and know the exact offset into which wish to place a value
+            -array, pointer arithmetic:
+
+                int x[10];
+                x[3] = 120;
+
+            ==>set the 3rd memory slot to the value 120
+            the bracket operator is just syntactic sugar, it's the same as:
+
+                *(x+3) = 120;
+
+            ==> adding 3 * sizeof(int) to x, sizeof is a special keyword gives the size, in bytes, of a variable of type
+            adding in increments of the variable size prevents you from accidentally using pointer arithmetic
+            to write/read between two values(-the last two bytes of one slot and the first two bytes of another)
+
+    should use array syntax rather than trying to get the pointer arithmetic correct
+    understanding pointer arithmetic makes it easier to do sophisticated stuff
+
+*two-dimensional arrays
+    actually laid out flat in memory, the compiler lets you treat it as square block of memory, but it's really just a linear collection of address
+
+    this:
+        [0][0][0][0]
+        [1][1][1][1]
+        [2][2][2][2]
+        [3][3][3][3]
+
+    is actually this:
+        [0][0][0][0][1][1][1][1][2][2][2][2][3][3][3][3]
+
+    array[3][2] turns into pointer arithmetic:
+    *(array + 3 * < width of array > +2)
+
+    that's why you need the second array size passing a two-dimensional array as argument, with out the width of the array, the math won't work
 
